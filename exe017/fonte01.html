@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fontes em CSS</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+        body {
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            /*
+            medidas absolutas:
+            cm, mm, in, px, pt, pc
+
+            medidas relativas:
+            em, ex, rem, vw, vh, %
+
+            16px = 1em geralmente
+            */
+
+            font-size: 1em;
+        }
+
+        /*h1,
+        h2 {
+            font-family: 'Times New Roman', Times, serif;
+        }*/
+
+        /* pesquisar as safes combinations toda vez que for por uma fonte*/
+
+        h1 {
+            /* font-family: 'Work sans';
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;*/
+
+            /* shorthands servem para diminuir as linha de código para montas a extrutura a cima. deve-se seguir a ordem mostrada à seguir*/
+
+            /* shorthand font
+            font style-> font weight -> font size -> font familY */
+
+
+            font: italic bolder 3em 'Work sans', sans-serif;
+        }
+
+        h2 {
+            font: bold 2em 'Work Sans';
+            /* é possivel omitir informações nas shorthands mas ainda é preciso seguir a ordem.*/
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Trabanhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod maxime optio, minima molestiae pariatur explicabo!
+        Animi, doloremque natus consectetur molestias nemo et tenetur! Velit, fugiat corporis quis consequuntur rerum
+        omnis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit consectetur magnam, provident assumenda
+        accusamus quod ex! Cupiditate aperiam earum eum est, eos expedita culpa! Numquam doloribus magni enim doloremque
+        reprehenderit?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos maxime dolor aut fuga! Officiis, neque harum vitae
+        alias sequi minima corporis qui iste atque modi voluptate iusto asperiores quas minus.</p>
+    <h2>subtitulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo autem commodi quam fugiat eligendi ipsa saepe
+        vero ad perspiciatis, sapiente ut fuga harum assumenda voluptate natus. Eligendi odit quaerat nam.</p>
+</body>
+
+</html>
